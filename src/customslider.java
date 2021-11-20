@@ -4,9 +4,8 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class customslider extends JSlider {
-    String label;
+    int valeur;
     JLabel name;
-    JLabel result; 
     int min,max;
 
 
@@ -17,11 +16,8 @@ public class customslider extends JSlider {
         this.setMaximum(max);
         this.setMinimum(min);
         this.setValue(1);
-        this.addChangeListener(new ChangeListener() {
-            public void stateChanged(ChangeEvent event) {
-              
-            }
-          });
+
    }
+
 }
         
